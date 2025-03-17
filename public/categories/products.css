@@ -1,0 +1,888 @@
+/*- @import Start -------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+/*--------------------------------------------------------------------------- @import End -*/
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+	font-family: 'Prompt', sans-serif;
+}
+
+html, body{
+	scroll-behavior: smooth;
+	background-color: #dcdcdc;
+	color: #202020;
+	position: relative;
+}
+
+
+/* ===== Scrollbar CSS ===== */
+*::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #ababab;
+}
+*::-webkit-scrollbar-thumb:hover {
+	background-color: #8f8f8f;
+}
+*::-webkit-scrollbar-thumb:active {
+	background-color: #7a7a7a;
+}
+
+
+/*- men and women header Start ------------------------------------------------------------*/
+
+/*- mens Start ---------------------------------------------------------------------*/
+.m-header{
+	height: 50vh;
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('https://i.postimg.cc/KcQwr4dr/mens.webp');
+	background-size: cover;
+	text-align: center;
+}
+.m-header h1{
+	margin-top: 8vh;
+	font-size: 75px;
+	font-weight: bold;
+}
+/*- hoodies Start ------------------------------------------------------------*/
+.hoodies-header{
+	height: 50vh;
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('https://i.postimg.cc/ry00ktMQ/hoodie-guy-4k-nf-1920x1080.webp');
+	background-size: cover;
+	text-align: center;
+}
+.hoodies-header h1{
+	margin-top: 8vh;
+	font-size: 75px;
+	font-weight: bold;
+}
+/*-------------------------------------------------------------- hoodies End -*/
+/*- trousers Start -----------------------------------------------------------*/
+.trousers-header{
+	height: 50vh;
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('https://i.postimg.cc/MpXgPxyM/trousers-bg.webp');
+	background-size: cover;
+	text-align: center;
+}
+.trousers-header h1{
+	margin-top: 8vh;
+	font-size: 75px;
+	font-weight: bold;
+}
+/*------------------------------------------------------------- trousers End -*/
+/*- tshirts Start ------------------------------------------------------------*/
+.tshirts-header{
+	height: 50vh;
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('https://i.postimg.cc/mk86j6ky/tshirts-bg.webp');
+	background-size: cover;
+	text-align: center;
+}
+.tshirts-header h1{
+	margin-top: 8vh;
+	font-size: 75px;
+	font-weight: bold;
+}
+/*-------------------------------------------------------------- tshirts End -*/
+/*----------------------------------------------------------------------- mens End -*/
+
+/*- womens Start -------------------------------------------------------------------*/
+.w-header{
+	height: 50vh;
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('https://i.postimg.cc/Wb3K9TVR/womens.webp');
+	background-size: cover;
+	text-align: center;
+}
+.w-header h1{
+	margin-top: 8vh;
+	font-size: 75px;
+	font-weight: bold;
+}
+/*- jeans Start --------------------------------------------------------------*/
+.jeans-header{
+	height: 50vh;
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('https://i.postimg.cc/NFzk5hLS/jeans-bg.webp');
+	background-size: cover;
+	text-align: center;
+}
+.jeans-header h1{
+	margin-top: 8vh;
+	font-size: 75px;
+	font-weight: bold;
+}
+/*---------------------------------------------------------------- jeans End -*/
+/*- dresses Start ------------------------------------------------------------*/
+.dresses-header{
+	height: 50vh;
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('https://i.postimg.cc/dQ4WzpQ8/dresses-bg.webp');
+	background-size: cover;
+	text-align: center;
+}
+.dresses-header h1{
+	margin-top: 8vh;
+	font-size: 75px;
+	font-weight: bold;
+}
+/*-------------------------------------------------------------- dresses End -*/
+/*- skirts Start -------------------------------------------------------------*/
+.skirts-header{
+	height: 50vh;
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('https://i.postimg.cc/htq7MPFM/skirts-bg.webp');
+	background-size: cover;
+	text-align: center;
+}
+.skirts-header h1{
+	margin-top: 8vh;
+	font-size: 75px;
+	font-weight: bold;
+}
+/*--------------------------------------------------------------- skirts End -*/
+/*- tops Start ---------------------------------------------------------------*/
+.tops-header{
+	height: 50vh;
+	background-image: linear-gradient(#ffffff80, #ffffff80), url('https://i.postimg.cc/xC7Xm9yv/tops-bg.webp');
+	background-size: cover;
+	text-align: center;
+}
+.tops-header h1{
+	margin-top: 8vh;
+	font-size: 75px;
+	font-weight: bold;
+}
+/*----------------------------------------------------------------- tops End -*/
+/*--------------------------------------------------------------------- womens End -*/
+
+/*- Navigation Menu Start ---------------------------------------------*/
+nav{
+	top: 0;
+  left: 0;
+  display: flex;
+  padding: 2% 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .black-logo img{
+  width: 150px;
+}
+nav .white-logo img{
+	width: 150px;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a{
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #1f59ec;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+.hamburger-menu{
+	display: none;
+}
+/*----------------------------------------------- Navigation Menu End -*/
+
+/*-------------------------------------------------------------- men and women header End -*/
+/*- cat Start -------------------------------------------------------------------------*/
+.top-cat{
+	text-align: center;
+	padding: 15px 20px 40px 20px;
+	color: #000;
+}
+.top-cat h1{
+	margin: 10px 0px 10px 0px;
+}
+
+.cat-items{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cat-card{
+	display: flex;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+	margin: 10px 15px;
+	height: 350px;
+	width: 255px;
+	border-radius: 15px;
+	color: #000;
+	background-color: #fff;
+	transition: 0.3s;
+}
+.cat-card:hover{
+	scale: 1.02;
+	box-shadow: 0 0 2px #424242, 0 0 15px #424242;
+	transition: 0.3s;
+}
+
+.cat-card button{
+	margin: 5px 5px 10px 5px;
+	padding: 5px 10px;
+	font-weight: bold;
+	color: #fff;
+	background: #000;
+	border: 2px solid #000;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.cat-card button:hover{
+	color: #fff;
+	background: #1f59ec;
+	border: 2px solid #1f59ec;
+	transition: 0.5s;
+}
+
+.cat-card img{
+	width: 225px;
+	height: 245px;
+	border: 3px solid #000;
+	border-radius: 10px 10px 0px 0px;
+	object-fit: cover;
+}
+
+.cat-card-content{
+	padding: 10px;
+}
+/*--------------------------------------------------------------------------- cat End -*/
+
+
+/*- products Start ------------------------------------------------------------------------*/
+.products{
+	padding: 15px 20px;
+	color: #000;
+}
+.products h1{
+	margin: 10px 0px 0px 20px;
+}
+
+.items{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+	display: flex;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+	margin: 10px 20px;
+	height: 325px;
+	width: 250px;
+	border-radius: 15px;
+	color: #000;
+	background-color: #fff;
+	transition: 0.3s;
+}
+.card:hover{
+	box-shadow: 0 0 2px #424242, 0 0 15px #424242;
+	transition: 0.3s;
+}
+
+.card button{
+	margin: 5px 5px;
+	padding: 5px 10px;
+	font-weight: bold;
+	color: #fff;
+	background: #000;
+	border: 2px solid #000;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.card button:hover{
+	color: #fff;
+	background: #1f59ec;
+	border: 2px solid #1f59ec;
+	transition: 0.5s;
+}
+.card button .ebay{
+	color: #93c5fb;
+	transition: 0.5s;
+}
+.card button:hover .ebay{
+	color: #fff;
+	transition: 0.5s;
+}
+.card button .ali{
+	color: #FF6A00;
+	transition: 0.5s;
+}
+
+.card img{
+	width: 160px;
+	height: 160px;
+	border: 2px solid #000;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+.card-content{
+	padding: 10px;
+}
+/*-------------------------------------------------------------------------- products End -*/
+
+/*- products cards Start ------------------------------------------------------------------*/
+.products-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  background: linear-gradient(#dcdcdc, #dcdcdc);
+}
+.products-card{
+	margin: 10px 25px;
+  position: relative;
+  width: 300px;
+  height: 250px;
+  background: #ffff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+.products-card:hover{
+  height: 450px;
+}
+
+.products-card a{
+	text-decoration: none;
+}
+
+.imgBx{
+  position: absolute;
+  left: 50%;
+  top: -60px;
+  width: 200px;
+  height: 200px;
+  background: rgb(255, 255, 255);
+  transform: translateX(-50%);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.35);
+}
+.imgBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.products-card:hover .imgBx{
+  width: 250px;
+  height: 250px;
+}
+.products-card .content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+.products-card .content .details{
+  padding: 40px;
+  width: 100%;
+  transition: 0.5s;
+  text-align: center;
+  transform: translateY(165px);
+}
+.products-card:hover .content .details{
+  transform: translateY(25px);
+}
+
+.products-card .content .details h2{
+  font-size: 1.25em;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  line-height: 1.2em;
+}
+.products-card .content .details .data{
+  margin: 5px 0px 5px 0px;
+	font-weight: bold;
+}
+.products-card .content .details .data h3{
+  font-size: 1em;
+  color: #000000;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+.hidden-btn{
+	visibility: hidden;
+}
+
+.products-card .content .details .actionbtn button{
+	margin: 5px 0px;
+}
+
+.products-card .content .details button .ebay{
+  color: #93c5fb;
+	transition: 0.5s;
+}
+
+.products-card .content .details button:hover .ebay{
+  color: #fff;
+	transition: 0.5s;
+}
+
+
+.products-card .content .details button .ali{
+  color: #FF6A00;
+	transition: 0.5s;
+}
+
+.products-card .content .details button:hover .ali{
+  color: #fff;
+	transition: 0.5s;
+}
+.card button:hover .ali{
+	color: #fff;
+	transition: 0.5s;
+}
+
+.products-card .content .details button .amazon{
+  color: #FF9900;
+	transition: 0.5s;
+}
+.card button .amazon{
+	color: #FF9900;
+	transition: 0.5s;
+}
+.products-card .content .details button:hover .amazon{
+  color: #fff;
+	transition: 0.5s;
+}
+.card button:hover .amazon{
+	color: #fff;
+	transition: 0.5s;
+}
+
+.products-card .content .details button{
+	margin: 10px 0px;
+	padding: 7px 15px;
+  border: 2px solid #000;
+  border-radius: 15px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+	transition: 0.5s;
+}
+.products-card .content .details button:hover{
+	scale: 1.05;
+	color: #fff;
+	background: #1f59ec;
+  border: 2px solid #1f59ec;
+	box-shadow: 0 0 5px #42424290;
+	transition: 0.5s;
+}
+/*-------------------------------------------------------------------- products cards End -*/
+
+
+/*- footer Start --------------------------------------------------------------------------*/
+.footer{
+	text-align: center;
+	padding: 15px;
+	color: #fff;
+	background: #141414;
+}
+/*---------------------------------------------------------------------------- footer End -*/
+
+
+/*- scroll-container Start ----------------------------------------------------------------*/
+.scroll-container {
+	margin-right: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+	z-index: 200;
+}
+.scroll-container:before {
+  content: '';
+  display: block;
+  height: 100vh;
+  pointer-events: none;
+}
+.scroll-container a {
+  position: sticky;
+  top: 95vh;
+  cursor: pointer;
+  font-size: 20px;
+}
+.scroll-container i {
+	text-shadow: 0 0 5px #9c9c9c;
+	font-size: 40px;
+	color: #fff;
+}
+/*------------------------------------------------------------------ scroll-container End -*/
+
+
+
+@media (prefers-color-scheme: light) {
+	nav .white-logo img{
+		display: none;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #272727;
+    color: #f0f0f0;
+  }
+
+	nav .black-logo img{
+		display: none;
+	}
+	
+	.nav-links ul li a {
+    color: #f0f0f0;
+	}
+	.nav-links ul li::after {
+    background: #f0f0f0;
+	}
+	
+	.m-header {
+    background-image: linear-gradient(#56565680, #56565680), url('https://i.postimg.cc/KcQwr4dr/mens.webp');
+	}
+	.m-header h1 {
+    color: #f0f0f0;
+	}
+	
+	.hoodies-header{
+		background-image: linear-gradient(#56565680, #56565680), url('https://i.postimg.cc/ry00ktMQ/hoodie-guy-4k-nf-1920x1080.webp');
+	}
+	.hoodies-header h1{
+		color: #f0f0f0;
+	}
+	
+	.trousers-header{
+		background-image: linear-gradient(#56565680, #56565680), url('https://i.postimg.cc/MpXgPxyM/trousers-bg.webp');
+	}
+	.trousers-header h1{
+		color: #f0f0f0;
+	}
+	
+	.tshirts-header{
+		background-image: linear-gradient(#56565680, #56565680), url('https://i.postimg.cc/mk86j6ky/tshirts-bg.webp');
+	}
+	.tshirts-header h1{
+		color: #f0f0f0;
+	}
+	
+	.w-header{
+		background-image: linear-gradient(#56565680, #56565680), url('https://i.postimg.cc/Wb3K9TVR/womens.webp');
+	}
+	.w-header h1{
+		color: #f0f0f0;
+	}
+	
+	.jeans-header{
+		background-image: linear-gradient(#56565680, #56565680), url('https://i.postimg.cc/NFzk5hLS/jeans-bg.webp');
+	}
+	.jeans-header h1{
+		color: #f0f0f0;
+	}
+	
+	.dresses-header{
+		background-image: linear-gradient(#56565680, #56565680), url('https://i.postimg.cc/dQ4WzpQ8/dresses-bg.webp');
+	}
+	.dresses-header h1{
+		color: #f0f0f0;
+	}
+	
+	.skirts-header{
+		background-image: linear-gradient(#56565680, #56565680), url('https://i.postimg.cc/htq7MPFM/skirts-bg.webp');
+	}
+	.skirts-header h1{
+		color: #f0f0f0;
+	}
+	
+	.tops-header{
+		background-image: linear-gradient(#56565680, #56565680), url('https://i.postimg.cc/xC7Xm9yv/tops-bg.webp');
+	}
+	.tops-header h1{
+		color: #f0f0f0;
+	}
+
+	
+	.top-cat {
+    background: #272727;
+	}
+	.cat-card {
+    color: #f0f0f0;
+    background-color: #464646;
+	}
+
+	.products-row {
+    background: linear-gradient(#27272780, #27272780);
+	}
+	.products-card {
+    background: #464646;
+	}
+	.products-card .content .details h2 {
+    color: #f0f0f0;
+	}
+	.products-card .content .details .data h3 {
+    color: #f0f0f0;
+	}
+}
+
+
+
+
+/*- Mobile Compatibility Start ------------------------------------------------------------*/
+@media screen and (max-width: 912px) {
+
+	.desk-menu{
+		display: none;
+	}
+
+	/*- Hamburger Menu Start --------------------------------------------*/
+	.hamburger-menu {
+  	position: sticky;
+  	display: block;
+  	z-index: 200;
+  	text-align: left;
+	}
+	#menuToggle{
+		width: fit-content;
+		display: block;
+		position: relative;
+		top: 40px;
+		left: 30px;
+		z-index: 1;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	#menuToggle a{
+		text-decoration: none;
+		color: #232323;
+		transition: color 0.3s ease;
+	}
+	#menuToggle a:hover{
+		color: #1f59ec;
+	}
+	#menuToggle input{
+		display: block;
+		width: 40px;
+		height: 32px;
+		position: absolute;
+		top: -7px;
+		left: -5px;
+		cursor: pointer;
+		opacity: 0;
+		z-index: 2;
+		-webkit-touch-callout: none;
+	}
+	#menuToggle span{
+		display: block;
+		width: 33px;
+		height: 4px;
+		margin-bottom: 5px;
+		position: relative;
+		background: #000000;
+		border-radius: 3px;
+		z-index: 1;
+		transform-origin: 4px 0px;
+		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+	}
+	#menuToggle span:first-child{
+		transform-origin: 0% 0%;
+	}
+	#menuToggle span:nth-last-child(2){
+		transform-origin: 0% 100%;
+	}
+	#menuToggle input:checked ~ span{
+		opacity: 1;
+		transform: rotate(45deg) translate(-2px, -1px);
+		background: #232323;
+	}
+	#menuToggle input:checked ~ span:nth-last-child(3){
+		opacity: 0;
+		transform: rotate(0deg) scale(0.2, 0.2);
+	}
+	#menuToggle input:checked ~ span:nth-last-child(2){
+		transform: rotate(-45deg) translate(0, -1px);
+	}
+	#menu{
+		position: absolute;
+		height: 120vh;
+		width: 412px;
+		margin: -85px 0 0 -49px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	}
+	#menu li{
+		padding: 10px 0;
+		font-size: 22px;
+	}
+	#menuToggle input:checked ~ ul{
+		transform: none;
+	}
+	/*---------------------------------------------- Hamburger Menu End -*/
+	
+	.m-header{
+		height: 30vh;
+	}
+	.m-header h1{
+		margin-top: 6vh;
+		line-height: 0.9;
+  	font-size: calc(12vw + 5px);
+	}
+	.hoodies-header{
+		height: 30vh;
+	}
+	.hoodies-header h1{
+		margin-top: 7vh;
+  	font-size: calc(10vw + 5px);
+	}
+	.trousers-header{
+		height: 30vh;
+	}
+	.trousers-header h1{
+		margin-top: 7vh;
+  	font-size: calc(10vw + 5px);
+	}
+	.tshirts-header{
+		height: 30vh;
+	}
+	.tshirts-header h1{
+		margin-top: 7vh;
+  	font-size: calc(10vw + 5px);
+	}
+	
+	.w-header{
+		height: 30vh;
+	}
+	.w-header h1{
+		margin-top: 5vh;
+		line-height: 0.9;
+  	font-size: calc(12vw + 5px);
+	}
+	.jeans-header{
+		height: 30vh;
+	}
+	.jeans-header h1{
+		margin-top: 7vh;
+  	font-size: calc(10vw + 5px);
+	}
+	.dresses-header{
+		height: 30vh;
+	}
+	.dresses-header h1{
+		margin-top: 7vh;
+  	font-size: calc(10vw + 5px);
+	}
+	.skirts-header{
+		height: 30vh;
+	}
+	.skirts-header h1{
+		margin-top: 7vh;
+  	font-size: calc(10vw + 5px);
+	}
+	.tops-header{
+		height: 30vh;
+	}
+	.tops-header h1{
+		margin-top: 7vh;
+  	font-size: calc(10vw + 5px);
+	}
+	
+	.products{
+		height: 20%;
+		padding: 0px 0px;
+	}
+	.products h1{
+		text-align: center;
+		font-size: 25px;
+		margin: 5px 0px 0px 0px;
+	}
+	.cat-items{
+		flex-direction: column;
+	}
+	
+	.items{
+		display: block;
+		width: 100%;
+		height: 30%;
+		white-space: nowrap;    
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch; 
+		padding: 5px 0px;
+	}
+	.card{
+    float: none;
+    display: inline-block;
+		height: auto;
+		width: auto;
+	}
+	.card img {
+    width: 175px;
+    height: 160px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    object-fit: cover;
+	}
+	.card button{
+		font-size: 10px;
+	}
+	.see-more{
+		float: none;
+		display: inline-block;
+		height: auto;
+		width: auto;
+	}
+
+	.products-card{
+		margin: 10vh 0px 0px 0px;
+	}
+
+	.products-row{
+		display: flex;
+    flex-direction: column;
+	}
+}
+/*-------------------------------------------------------------- Mobile Compatibility End -*/

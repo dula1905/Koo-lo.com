@@ -1,0 +1,206 @@
+.deals-content{
+  height: auto;
+  display: flex;
+	text-align: center;
+  justify-content: center;
+  background: #dcdcdc;
+	padding: 10px 0px;
+	color: #000;
+}
+
+.deals-content section{
+  position: relative;  
+  height: 450px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.deals-content .swiper{
+  width: 85vw;
+}
+
+.deals-content .card{
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	cursor: grab;
+}
+.deals-content .card:active{
+	cursor: grabbing;
+}
+
+.deals-content .card .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+}
+
+.deals-content section .card .image{
+  height: 200px;
+  width: 95%;
+  border-radius: 15px;
+  background: #ffffff;
+}
+
+.deals-content section .card .image img{
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #000000;
+}
+
+.deals-content .card .name-price{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: ;
+} 
+
+.deals-content .name-price .name{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.deals-content .name-price .price{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.deals-content .card .button{
+  width: 100%;
+	height: auto;
+  margin-top: 15px;
+}
+
+.deals-content .card .button .offer-btn{
+	font-weight: bold;
+  text-decoration: none;
+	padding: 5px 10px;
+	border: 2px solid #000;
+	border-radius: 15px;
+	color: #fff;
+	background: #000;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.deals-content .button .offer-btn:hover{
+  color: #e0e0e0;
+	background: #1f59ec;
+	border: 2px solid #1f59ec;
+	transition: 0.5s;
+}
+
+.deals-content .card .button a{
+	font-weight: bold;
+	font-size: 13px;
+	text-decoration: none;
+	color: #000;
+	transition: 0.5s;
+}
+.deals-content .card .button a:hover{
+	color: #1f59ec;
+}
+
+.deals-content .card .button .ebay{
+  color: #93c5fb;
+	transition: 0.5s;
+}
+.deals-content .card .button:hover .ebay{
+  color: #fff;
+	transition: 0.5s;
+}
+.deals-content .card .button .ali{
+  color: #FF6A00;
+	transition: 0.5s;
+}
+.deals-content .card .button:hover .ali{
+  color: #fff;
+	transition: 0.5s;
+}
+.deals-content .card .button .amazon{
+  color: #FF9900;
+	transition: 0.5s;
+}
+.deals-content .card .button:hover .amazon{
+  color: #fff;
+	transition: 0.5s;
+}
+
+.deals-content .swiper-pagination{
+	margin: 0px 0px -24px 0px;
+  position: absolute;
+}
+
+.deals-content .swiper-pagination-bullet{
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: #000;
+}
+
+.deals-content .swiper-button-next, .swiper-button-prev{
+  opacity: 0.7;
+  color: #000;
+	z-index: 150;
+  transition: all 0.3s ease;
+}
+.deals-content .swiper-button-next:hover, .swiper-button-prev:hover{
+  opacity: 1;
+  color: #2e2e2e;
+}
+
+
+
+
+@media (prefers-color-scheme: dark) {
+	.deals-content {
+    background: #272727;
+    color: #f0f0f0;
+	}
+	.deals-content .card {
+    background: #464646;
+	}
+	.deals-content .card .button a {
+    color: #f0f0f0;
+	}
+	.deals-content .card .button a:hover {
+    color: #a5bfff;
+	}
+	.deals-content section .card .image {
+    background: #464646;
+	}
+	.deals-content .swiper-pagination-bullet {
+    background: #f0f0f0;
+	}
+	.deals-content .swiper-button-next, .swiper-button-prev {
+    color: #fff;
+	}
+	.deals-content .swiper-button-next:hover, .swiper-button-prev:hover {
+    opacity: 0.5;
+    color: #fff;
+	}
+}
+
+
+
+
+@media screen and (max-width: 912px) {
+
+	.deals-content .swiper{
+  	width: 70vw;
+	}
+
+	.deals-content .swiper-pagination-bullet {
+    width: 20px;
+	}
+
+}
